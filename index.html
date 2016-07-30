@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"  type="text/css" href="estilo.css"
+<meta charset="utf-8">
+<title>Vaporlay</title>
+<script>
+
+
+function openNav() {
+    document.getElementById("myNav").style.width = "20%";
+    var esconde = document.getElementById("menu");
+    esconde.style.visibility="hidden";
+}
+
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    var esconde = document.getElementById("menu");
+    esconde.style.visibility="visible";
+}
+
+
+</script>
+
+
+</head>
+<body>
+<header>
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Vaporwave</a>
+    <a href="#">Sobre</a>
+    <a href="#">Clientes</a>
+    <a href="#">Contato</a>
+  </div>
+  </div>
+  <span onclick="openNav()"><img id="menu" src="menu.svg" width: 50px; height: 50px;></span>
+
+  <br><br>
+
+
+
+<div id="logo">
+  <h1>Vaporlay</h1>
+
+</div>
+
+
+</header>
+
+
+
+</body>
+</html>
