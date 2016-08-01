@@ -13,6 +13,41 @@ body{
     src: url(VCR_OSD_MONO_1.001.ttf);
 }
 
+
+#teste{
+  background-color: black;
+  width: 245px;
+  height: 295px;
+  opacity: 0.9;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  color: white;
+  text-align: center;
+
+
+}
+#botao{
+  background-color: black;
+  width: 130px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  margin-left: 50px;
+  margin-top: 180px;
+  padding-top: 10px;
+
+
+}
+
+#corpo{
+  padding-left: 100px;
+}
+
+
 #logo{
   font-family: vhs;
   text-align: center;
@@ -21,6 +56,54 @@ body{
   padding-top: 50px;
   background-image: url(bg.svg);
   margin-left: 40%;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+  display: inline-block;
+  margin-right: 20px;
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+
+	}
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 300px;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+
 }
 
 .overlay {
